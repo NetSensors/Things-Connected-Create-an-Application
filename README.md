@@ -14,17 +14,23 @@ Creating a Sigfox application on the things connected portal
 5. The HTTP method your server expects to recieve the messages by. As we are usually writing data this should be POST.
 6. The formatting of the 12 bytes being recieved in this case we are converting the bytes into a decimal so 0-255.
 ```
-{{device}#{seqNumber}#{station}#{rssi}#{customData#int1}#{customData#int2}#{customData#int3}#{customData#int4}#{customData#int5}#{customData#int6}#{customData#int7}#{customData#int8}#{customData#int9}#{customData#int10}#{customData#int11}#{customData#int12}}
+int1::uint:8 int2::uint:8 int3::uint:8 int4::uint:8 int5::uint:8 int6::uint:8 int7::uint:8 int8::uint:8 int9::uint:8 int10::uint:8 int11::uint:8 int12::uint:8	
 ```
 7. This formats the fields to be posted to your applicatin server.
 ```
 { 					
-	"temperature" : "{customData#int1}.{customData#int2}", 
-	"humidity" : "{customData#int3}.{customData#int4}" ,
-	"temperature1" : "{customData#int5}.{customData#int6}", 
-	"humidity1" : "{customData#int7}.{customData#int8}" , 
-	"temperature2" : "{customData#int9}.{customData#int10}", 
-	"humidity2" : "{customData#int11}.{customData#int12}" , 
+	"data1" : "{customData#int1}", 
+	"data2" : "{customData#int2}", 
+	"data3" : "{customData#int3}", 
+	"data4" : "{customData#int4}", 
+	"data5" : "{customData#int5}", 
+	"data6" : "{customData#int6}", 
+	"data7" : "{customData#int7}", 
+	"data8" : "{customData#int8}", 
+	"data9" : "{customData#int9}", 
+	"data10" : "{customData#int10}", 
+	"data11" : "{customData#int11}", 
+	"data12": "{customData#int12}", 
 	"device" : "{device}", 
 	"deviceType" : "Bluefox", 
 	"time" : "{time}", 
