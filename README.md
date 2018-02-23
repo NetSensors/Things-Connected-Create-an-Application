@@ -42,7 +42,7 @@ Creating a Sigfox application on the things connected portal
 
 1. We now need to connect devices to our application. Select devices from the left hand menu
 
-c
+![Screenshot](screenshots/tca006.png)
 
 1. On the right hand side select the icon for the drop down box
 2. Select your application from this list, in my case it was 'My First Application'
