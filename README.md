@@ -12,13 +12,30 @@ Creating a Sigfox application on the things connected portal
 3. Enter the URL of where the messages need to be sent
 4. The callback subtype should be set to BIDIR so we can use two way messaging.
 5. The HTTP method your server expects to recieve the messages by. As we are usually writing data this should be POST.
-6. The formatting of the data being recieved in this case we are converting the bytes into a decimal so 0-255.
+6. The formatting of the 12 bytes being recieved in this case we are converting the bytes into a decimal so 0-255.
 ```
 {{device}#{seqNumber}#{station}#{rssi}#{customData#int1}#{customData#int2}#{customData#int3}#{customData#int4}#{customData#int5}#{customData#int6}#{customData#int7}#{customData#int8}#{customData#int9}#{customData#int10}#{customData#int11}#{customData#int12}}
 ```
-7.
-8.
-9.
+7. This formats the fields to be posted to your applicatin server.
+```
+{ 					
+	"temperature" : "{customData#int1}.{customData#int2}", 
+	"humidity" : "{customData#int3}.{customData#int4}" ,
+	"temperature1" : "{customData#int5}.{customData#int6}", 
+	"humidity1" : "{customData#int7}.{customData#int8}" , 
+	"temperature2" : "{customData#int9}.{customData#int10}", 
+	"humidity2" : "{customData#int11}.{customData#int12}" , 
+	"device" : "{device}", 
+	"deviceType" : "Bluefox", 
+	"time" : "{time}", 
+	"station" : "{station}", 
+	"rssi" : "{rssi}", 
+	"seqNumber" : "{seqNumber}" 
+}
+```
+
+8. As we are sending JSON Formatted data we set this to application/json
+9. Click next to complete the application setup
 
 ![Screenshot](screenshots/tca002.png)
 
