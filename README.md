@@ -1,6 +1,8 @@
 # Things-Connected-Create-an-Application
 Creating a Sigfox application on the things connected portal
 
+The login page can be found here https://dashboard.thingsconnected.net/login
+
 1. Select Sigfox to make sure we are creating a sigfox application
 2. Select Applications on the left hand menu
 
