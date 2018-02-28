@@ -1,6 +1,8 @@
 # Things-Connected-Create-an-Application
 Creating a Sigfox application on the things connected portal
 
+Dashboard http://52.56.182.210/netsensors/chart.php?deviceid=368605&range=1&limit=50
+
 API URL http://52.56.182.210/netsensors/api.php
 
 The login page can be found here https://dashboard.thingsconnected.net/login
