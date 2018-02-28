@@ -1,6 +1,8 @@
 # Things-Connected-Create-an-Application
 Creating a Sigfox application on the things connected portal
 
+API URL http://52.56.182.210/netsensors/api.php
+
 The login page can be found here https://dashboard.thingsconnected.net/login
 
 1. Select Sigfox to make sure we are creating a sigfox application
