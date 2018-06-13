@@ -19,7 +19,8 @@ The login page can be found here https://dashboard.thingsconnected.net/login
 4. The callback subtype should be set to BIDIR so we can use two way messaging.
 5. The HTTP method your server expects to recieve the messages by. As we are usually writing data this should be POST.
 6. The formatting of the 12 bytes being recieved in this case we are converting the bytes into a decimal so 0-255.
-```int1::uint:8 int2::uint:8 int3::uint:8 int4::uint:8 int5::uint:8 int6::uint:8 int7::uint:8 int8::uint:8 int9::uint:8 int10::uint:8 int11::uint:8 int12::uint:8```
+```int1::uint:8 int2::uint:8 int3::uint:8 int4::uint:8 int5::uint:8 int6::uint:8 int7::uint:8 int8::uint:8 int9::uint:8 int10::uint:8 int11::uint:8 int12::uint:8
+```
 7. This formats the fields to be posted to your applicatin server.
 ```
 { 					
